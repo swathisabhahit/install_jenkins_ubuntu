@@ -9,6 +9,9 @@ if [[ $EUID -ne 0 ]]; then
 	exit 1
 fi
 
+#Install JAVA
+sudo apt install default-jre -y
+
 # Install the necessary packages to prepare the environment
 sudo apt-get install autoconf bison build-essential libffi-dev libssl-dev
 sudo apt-get install libyaml-dev libreadline6 libreadline6-dev zlib1g zlib1g-dev curl git vim
