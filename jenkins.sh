@@ -9,6 +9,7 @@ if [[ $EUID -ne 0 ]]; then
 	exit 1
 fi
 
+sudo apt-get update -y
 #Install JAVA
 sudo apt install default-jre -y
 
